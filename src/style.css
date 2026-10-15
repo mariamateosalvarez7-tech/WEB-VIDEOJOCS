@@ -178,3 +178,15 @@ nav a:hover{
 .stat p{
   color:#c1c0a1;
 }
+
+.page-title{
+  margin: 50px 0 35px 60px;
+
+  color: #f5f5dc;
+
+  font-size: 4rem;
+  font-weight: 800;
+
+  letter-spacing: -0.06em;
+  line-height: 1;
+}

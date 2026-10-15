@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>Videojocs</h1>
+    <h1 class="page-title">
+  Videojocs
+</h1>
 
     <p v-if="loading">Carregant videojocs...</p>
 
