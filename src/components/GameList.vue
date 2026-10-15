@@ -1,10 +1,12 @@
 <template>
-  <div>
+  <div class="games-grid">
+
     <GameCard
       v-for="game in games"
       :key="game.id"
       :game="game"
     />
+
   </div>
 </template>
 

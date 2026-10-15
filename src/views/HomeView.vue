@@ -1,8 +1,14 @@
 <template>
-  <div>
-    <h1>🎮 Col·lecció de Videojocs</h1>
-    <p>
-      Benvingut a la meva aplicació creada amb Vue, Vue Router i Firestore.
-    </p>
-  </div>
+
+<div class="hero">
+
+<h1>🎮 GAMEVERSE</h1>
+
+<p>
+Explora una col·lecció de videojocs
+emmagatzemats a Cloud Firestore.
+</p>
+
+</div>
+
 </template>

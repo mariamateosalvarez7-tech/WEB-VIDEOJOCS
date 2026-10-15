@@ -1,8 +1,10 @@
 <template>
   <nav>
-    <RouterLink to="/">Inici</RouterLink> |
-    <RouterLink to="/games">Videojocs</RouterLink> |
-    <RouterLink to="/about">Sobre</RouterLink>
+    <h2>🎮 GAMEVERSE</h2>
+
+    <RouterLink to="/">🏠 Inici</RouterLink>
+    <RouterLink to="/games">🎮 Videojocs</RouterLink>
+    <RouterLink to="/about">ℹ️ Sobre</RouterLink>
   </nav>
 </template>
 
