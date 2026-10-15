@@ -6,13 +6,13 @@ GAMEVERSE és una aplicació web desenvolupada amb Vue 3 que permet consultar un
 
 L'aplicació utilitza Vue Router per a la navegació entre pàgines, components reutilitzables i Firebase per a l'emmagatzematge i desplegament.
 
----
+
 
 ##  Web publicada
 
 🔗 https://web-videojocs.web.app
 
----
+
 
 ##  Tecnologies utilitzades
 
@@ -23,7 +23,7 @@ L'aplicació utilitza Vue Router per a la navegació entre pàgines, components 
 - Vite
 - CSS
 
----
+
 
 ##  Instal·lació del projecte
 
@@ -51,7 +51,7 @@ npm run build
 firebase deploy
 ```
 
----
+
 
 ##  Components propis
 
@@ -67,7 +67,7 @@ Rep la llista de videojocs i genera les targetes de cada joc.
 
 Mostra la informació individual de cada videojoc.
 
----
+
 
 ##  Exemple de comunicació amb props
 
@@ -93,7 +93,7 @@ defineProps({
 })
 ```
 
----
+
 
 ##  Rutes disponibles
 
@@ -109,7 +109,7 @@ Mostra els videojocs emmagatzemats a Cloud Firestore.
 
 Mostra informació sobre el projecte i les tecnologies utilitzades.
 
----
+
 
 ##  Firestore
 
@@ -134,13 +134,13 @@ imatge
 /games
 ```
 
----
+
 
 ## 🔗 Repositori GitHub
 
 https://github.com/mariamateosalvarez7-tech/WEB-VIDEOJOCS
 
----
+
 
 ##  Autora
 
