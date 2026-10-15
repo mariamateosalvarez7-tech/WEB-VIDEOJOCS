@@ -95,7 +95,7 @@ defineProps({
 
 ---
 
-## 🗺️ Rutes disponibles
+##  Rutes disponibles
 
 ### /
 
@@ -111,7 +111,7 @@ Mostra informació sobre el projecte i les tecnologies utilitzades.
 
 ---
 
-## 🔥 Firestore
+##  Firestore
 
 ### Col·lecció utilitzada
 
