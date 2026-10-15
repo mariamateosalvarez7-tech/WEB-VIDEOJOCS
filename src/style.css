@@ -8,8 +8,8 @@
 
 body{
   font-family:'Outfit',sans-serif;
-  background:#0f172a;
-  color:white;
+  background:#35445d;
+  color:#c1c0a1;
 
   letter-spacing:-0.02em;
   line-height:1.5;
@@ -33,7 +33,7 @@ nav{
   width:260px;
   height:100vh;
 
-  background:#020617;
+  background:#1f2e48;
 
   display:flex;
   flex-direction:column;
@@ -41,11 +41,11 @@ nav{
   padding:40px 25px;
   gap:20px;
 
-  border-right:2px solid #38bdf8;
+  
 }
 
 nav h2{
-  color:#38bdf8;
+  color:#6b9db3;
   margin-bottom:40px;
 }
 
@@ -53,11 +53,18 @@ nav a{
   font-size:1.05rem;
   font-weight:600;
   letter-spacing:-0.03em;
+  color:#c0bd89;
+  text-decoration:none;
+  font-weight:600;
+  padding:12px 16px;
+  border-radius:12px;
+  transition:.3s;
 }
 
 
+
 nav a:hover{
-  background:#1e293b;
+  background:#2c374a;
 }
 
 .hero{
@@ -73,7 +80,7 @@ nav a:hover{
 
 .hero h1{
   font-size:5rem;
-  color:#38bdf8;
+  color:#6b9db3;
   margin-bottom:10px;
 
   letter-spacing:-0.08em;
@@ -81,7 +88,7 @@ nav a:hover{
 
 .hero p{
   font-size:1.4rem;
-  color:#cbd5e1;
+  color:#c0bd89;
 }
 
 .games-grid{
@@ -129,7 +136,7 @@ nav a:hover{
 }
 
 .content p{
-  color:#e2e8f0;
+  color:#c0bd89;
   margin-bottom:4px;
 }
 
@@ -138,7 +145,7 @@ nav a:hover{
 }
 
 .about h1{
-  color:#38bdf8;
+  color:#6b9db3;
   margin-bottom:20px;
 }
 
@@ -149,4 +156,25 @@ nav a:hover{
 
 .about li{
   margin-bottom:10px;
+}
+
+.stats{
+  display:flex;
+  gap:25px;
+  margin-top:50px;
+}
+
+.stat{
+  background:#1d2b42;
+  padding:25px;
+  border-radius:20px;
+  min-width:160px;
+}
+
+.stat h2{
+  color:#c1c0a1;
+}
+
+.stat p{
+  color:#c1c0a1;
 }
