@@ -1,4 +1,4 @@
-🎮 GAMEVERSE
+GAMEVERSE 🎮 
 Descripció
 GAMEVERSE és una aplicació web desenvolupada amb Vue 3 que permet consultar una col·lecció de videojocs emmagatzemats a Cloud Firestore.
 
@@ -15,17 +15,13 @@ Cloud Firestore
 Vite
 CSS
 Instal·lació del projecte
-Instal·lar les dependències:
-
+Instal·lar les dependències
 npm install
-Executar el projecte localment:
-
+Executar el projecte localment
 npm run dev
-Generar la versió de producció:
-
+Generar la versió de producció
 npm run build
-Desplegar a Firebase:
-
+Desplegar a Firebase
 firebase deploy
 Components propis
 Navbar.vue
@@ -38,45 +34,41 @@ GameCard.vue
 Mostra la informació individual de cada videojoc.
 
 Exemple de comunicació amb props
-El component pare:
-
+Component pare
 GameList.vue
-passa la informació de cada videojoc al component fill:
 
+Component fill
 GameCard.vue
-mitjançant la prop:
 
+Dades que es passen
 <GameCard :game="game" />
-El component fill rep les dades utilitzant:
+El component fill rep les dades mitjançant:
 
 defineProps({
   game: Object
 })
 Rutes disponibles
 /
-Pàgina d'inici de GAMEVERSE.
+Pàgina principal de GAMEVERSE.
 
 /games
-Mostra els videojocs llegits des de Cloud Firestore.
+Mostra els videojocs emmagatzemats a Cloud Firestore.
 
 /about
-Informació sobre el projecte i les tecnologies utilitzades.
+Mostra informació sobre el projecte i les tecnologies utilitzades.
 
 Firestore
-Col·lecció utilitzada:
-
+Col·lecció utilitzada
 games
-Camps principals:
-
+Camps principals
 nom
 genere
 plataforma
 imatge
-Les dades es mostren a la ruta:
-
+Vista que mostra les dades
 /games
-Repositori GitHub
-🔗 https://github.com/mariamateosalvarez7-tech/WEB-VIDEOJOCS
+🔗 Repositori GitHub
+https://github.com/mariamateosalvarez7-tech/WEB-VIDEOJOCS
 
 Autora
 María Mateos Álvarez
