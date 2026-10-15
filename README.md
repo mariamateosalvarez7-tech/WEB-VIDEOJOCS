@@ -1,44 +1,82 @@
-# .
+🎮 GAMEVERSE
+Descripció
+GAMEVERSE és una aplicació web desenvolupada amb Vue 3 que permet consultar una col·lecció de videojocs emmagatzemats a Cloud Firestore.
 
-This template should help get you started developing with Vue 3 in Vite.
+L'aplicació utilitza Vue Router per a la navegació entre pàgines, components reutilitzables i Firebase per a l'emmagatzematge i desplegament.
 
-## Recommended IDE Setup
+Web publicada
+🔗 https://web-videojocs.web.app
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Tecnologies utilitzades
+Vue 3
+Vue Router
+Firebase
+Cloud Firestore
+Vite
+CSS
+Instal·lació del projecte
+Instal·lar les dependències:
 
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
 npm install
-```
+Executar el projecte localment:
 
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
+Generar la versió de producció:
 
-### Compile and Minify for Production
-
-```sh
 npm run build
-```
+Desplegar a Firebase:
 
-### Lint with [ESLint](https://eslint.org/)
+firebase deploy
+Components propis
+Navbar.vue
+Mostra el menú de navegació de l'aplicació.
 
-```sh
-npm run lint
-```
+GameList.vue
+Rep la llista de videojocs i genera les targetes de cada joc.
+
+GameCard.vue
+Mostra la informació individual de cada videojoc.
+
+Exemple de comunicació amb props
+El component pare:
+
+GameList.vue
+passa la informació de cada videojoc al component fill:
+
+GameCard.vue
+mitjançant la prop:
+
+<GameCard :game="game" />
+El component fill rep les dades utilitzant:
+
+defineProps({
+  game: Object
+})
+Rutes disponibles
+/
+Pàgina d'inici de GAMEVERSE.
+
+/games
+Mostra els videojocs llegits des de Cloud Firestore.
+
+/about
+Informació sobre el projecte i les tecnologies utilitzades.
+
+Firestore
+Col·lecció utilitzada:
+
+games
+Camps principals:
+
+nom
+genere
+plataforma
+imatge
+Les dades es mostren a la ruta:
+
+/games
+Repositori GitHub
+🔗 https://github.com/mariamateosalvarez7-tech/WEB-VIDEOJOCS
+
+Autora
+María Mateos Álvarez
