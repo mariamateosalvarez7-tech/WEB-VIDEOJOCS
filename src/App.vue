@@ -1,9 +1,9 @@
 <template>
-  <nav>
-    <RouterLink to="/">Inici</RouterLink> |
-    <RouterLink to="/games">Videojocs</RouterLink> |
-    <RouterLink to="/about">Sobre</RouterLink>
-  </nav>
-
+  <Navbar />
   <RouterView />
 </template>
+
+<script setup>
+import Navbar from './components/Navbar.vue'
+import { RouterView } from 'vue-router'
+</script>
