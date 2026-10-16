@@ -1,18 +1,16 @@
-# GAMEVERSE 🎮 
+# GAMEVERSE 🎮
 
 ##  Descripció
 
 GAMEVERSE és una aplicació web desenvolupada amb Vue 3 que permet consultar una col·lecció de videojocs emmagatzemats a Cloud Firestore.
 
-L'aplicació utilitza Vue Router per a la navegació entre pàgines, components reutilitzables i Firebase per a l'emmagatzematge i desplegament.
-
-
+L'aplicació ofereix una interfície moderna amb navegació entre pàgines, visualització de videojocs mitjançant targetes interactives i consulta de dades emmagatzemades a Firebase.
 
 ##  Web publicada
 
 🔗 https://web-videojocs.web.app
 
-
+---
 
 ##  Tecnologies utilitzades
 
@@ -21,9 +19,24 @@ L'aplicació utilitza Vue Router per a la navegació entre pàgines, components 
 - Firebase
 - Cloud Firestore
 - Vite
-- CSS
+- CSS3
+- GitHub
 
+---
 
+##  Funcionalitats
+
+- Navegació entre pàgines amb Vue Router.
+- Consulta de videojocs des de Cloud Firestore.
+- Visualització de portades dels videojocs.
+- Informació detallada de cada joc.
+- Mostra del gènere i plataforma.
+- Sistema de puntuacions.
+- Descripció personalitzada per a cada videojoc.
+- Disseny responsive i modern.
+- Desplegament amb Firebase Hosting.
+
+---
 
 ##  Instal·lació del projecte
 
@@ -51,35 +64,46 @@ npm run build
 firebase deploy
 ```
 
+---
 
-
-##  Components propis
+##  Components principals
 
 ### Navbar.vue
 
-Mostra el menú de navegació de l'aplicació.
+Gestiona el menú de navegació entre les diferents pàgines de l'aplicació.
 
 ### GameList.vue
 
-Rep la llista de videojocs i genera les targetes de cada joc.
+Rep el conjunt de videojocs i genera automàticament les targetes corresponents.
 
 ### GameCard.vue
 
-Mostra la informació individual de cada videojoc.
+Mostra tota la informació d'un videojoc:
 
+- Imatge
+- Nom
+- Gènere
+- Plataforma
+- Puntuació
+- Descripció
 
+---
 
-##  Exemple de comunicació amb props
+##  Comunicació entre components
 
 ### Component pare
 
-`GameList.vue`
+```text
+GameList.vue
+```
 
 ### Component fill
 
-`GameCard.vue`
+```text
+GameCard.vue
+```
 
-### Dades que es passen
+### Props utilitzades
 
 ```vue
 <GameCard :game="game" />
@@ -93,9 +117,9 @@ defineProps({
 })
 ```
 
+---
 
-
-##  Rutes disponibles
+## 🗺️ Rutes disponibles
 
 ### /
 
@@ -103,15 +127,15 @@ Pàgina principal de GAMEVERSE.
 
 ### /games
 
-Mostra els videojocs emmagatzemats a Cloud Firestore.
+Mostra els videojocs emmagatzemats a Firebase Firestore.
 
 ### /about
 
 Mostra informació sobre el projecte i les tecnologies utilitzades.
 
+---
 
-
-##  Firestore
+##  Base de dades Firestore
 
 ### Col·lecció utilitzada
 
@@ -126,22 +150,52 @@ nom
 genere
 plataforma
 imatge
+nota
+descripcio
 ```
 
-### Vista que mostra les dades
+### Exemple de document
 
 ```text
-/games
+nom: The Legend of Zelda
+genere: Aventura
+plataforma: PC
+nota: 9.8/10
+descripcio: Explora Hyrule en una aventura èpica.
+imatge: /zelda.jpg
 ```
 
+---
 
+##  Estructura del projecte
 
-## 🔗 Repositori GitHub
+```text
+src
+├── components
+│   ├── Navbar.vue
+│   ├── GameCard.vue
+│   └── GameList.vue
+├── views
+│   ├── HomeView.vue
+│   ├── GamesView.vue
+│   └── AboutView.vue
+├── router
+│   └── index.js
+├── firebase.js
+├── App.vue
+└── style.css
+```
+
+---
+
+##  Repositori GitHub
 
 https://github.com/mariamateosalvarez7-tech/WEB-VIDEOJOCS
 
-
+---
 
 ##  Autora
 
 María Mateos Álvarez
+
+Projecte desenvolupat amb Vue 3, Firebase i Cloud Firestore.
