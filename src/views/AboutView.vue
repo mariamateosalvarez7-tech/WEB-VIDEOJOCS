@@ -22,5 +22,15 @@ Vue Router, Firebase i Cloud Firestore.
 
 </div>
 
+<h2>Tecnologies utilitzades</h2>
+
+<ul>
+  <li>Vue 3</li>
+  <li>Vue Router</li>
+  <li>Firebase Firestore</li>
+  <li>GitHub</li>
+  <li>Vite</li>
+</ul>
+
 </template>
 ``

@@ -190,3 +190,38 @@ nav a:hover{
   letter-spacing: -0.06em;
   line-height: 1;
 }
+
+.game-card{
+  background:#1e293b;
+  border-radius:20px;
+  overflow:hidden;
+  transition:.35s;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.game-card:hover{
+  transform:translateY(-12px);
+  box-shadow:
+  0 20px 40px rgba(0,0,0,.45);
+}
+
+.hero-btn{
+  width:max-content;
+  margin-top:25px;
+  background:#6b9db3;
+  color:white;
+  border:none;
+  padding:15px 30px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+
+footer{
+  margin-top:60px;
+  padding:30px;
+  text-align:center;
+  background:#1f2e48;
+  color:#c1c0a1;
+}
