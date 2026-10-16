@@ -37,3 +37,9 @@
 
   </div>
 </template>
+
+<script setup>
+defineProps({
+  game: Object
+})
+</script>
